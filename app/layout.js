@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link'
-import { usePathname, useRouter, useSearchParams } from 'next/Navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
 import './globals.css'

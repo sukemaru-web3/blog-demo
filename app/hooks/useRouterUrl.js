@@ -4,7 +4,7 @@
 // ずっとuseRouter使えなかったけど、別の関数で呼び出すようになったみたい
 // URLのパスはusePathname、クエリーはuseSearchParamsだそうです
 
-import { usePathname } from "next/Navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const useRouterUrl = () =>{

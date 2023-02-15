@@ -1,28 +1,37 @@
 
 import Link from "next/link";
-import { getList } from "../../libs/client";
+
+
+
+async function getData(){
+  const res = await fetch("https://blogpage.microcms.io/api/v1/blog")
+  return res.json();
+}
 export default async function StaticPage() {
- const { contents } = await getList();
+ const test = await getData();
+ console.log(test.content);
 
- // ページの生成された時間を取得
- const time = new Date().toLocaleString();
 
- if (!contents || contents.length === 0) {
-  return <h1>No contents</h1>;
- }
+//  // ページの生成された時間を取得
+//  const time = new Date().toLocaleString();
+
+//  if (!contents || contents.length === 0) {
+//   return <h1>No contents</h1>;
+//  }
 
  return (
   <div>
     <main>
-   <h1 > {time}</h1>
+   <h1 >ブログだよ</h1>
    <ul>
-    {contents.map((post) => {
+    
+    {/* {test.map(() => {
      return (
       <li key={post.id}>
        <Link href={`/static/${post.id}`}>{post.title}</Link>
       </li>
      );
-    })}
+    })} */}
    </ul>
    </main>
   </div>

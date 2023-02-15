@@ -16,6 +16,8 @@ export default function RootLayout({ children }) {
   const router = usePathname();
   const [pagename, setPagename] = useState();
 
+
+
   useEffect(() => {
       setPagename(router);
 

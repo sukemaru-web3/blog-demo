@@ -84,6 +84,7 @@
 
   .nav{
     justify-content: space-between;
+    display: none;
   }
   .ul{
     padding: 20px;

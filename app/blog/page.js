@@ -4,12 +4,12 @@ import Link from "next/link";
 
 
 async function getData(){
-  const res = await fetch("https://blogpage.microcms.io/api/v1/blog")
+  const res = await fetch("https://blogpage.microcms.io/api/v1/blog/zf4wvhzfi")
   return res.json();
 }
 export default async function StaticPage() {
  const test = await getData();
- console.log(test.content);
+ console.log(test);
 
 
 //  // ページの生成された時間を取得

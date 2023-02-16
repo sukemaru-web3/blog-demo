@@ -1,6 +1,12 @@
 import { createClient } from 'microcms-js-sdk';
 
+// export const client = createClient({
+//   serviceDomain: process.env.NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN,
+//   apiKey: process.env.NEXT_PUBLIC_MICROCMS_API_KEY,
+// });
+
+
 export const client = createClient({
-  serviceDomain: 'blog-page',  // service-domain は XXXX.microcms.io の XXXX 部分
-  apiKey: 'vdPG2iz5Jr09oFfK5XF2LGTkndGZlX0OHtgE',
+  serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
+  apiKey: process.env.MICROCMS_API_KEY
 });

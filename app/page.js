@@ -8,19 +8,19 @@ import { client } from '@/libs/client';
 const inter = Inter({ subsets: ['latin'] })
 
 
-export const getStaticProps = async () => {
-  const data = await client.get({
-    endpoint: 'blog',
-  });
+// export const getStaticProps = async () => {
+//   const data = await client.get({
+//     endpoint: 'blog',
+//   });
 
 
 
-  return {
-    props: {
-      blog:data,
-    },
-  };
-};
+//   return {
+//     props: {
+//       blog:data,
+//     },
+//   };
+// };
 
 
 export default function page({blog}) { 

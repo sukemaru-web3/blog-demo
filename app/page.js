@@ -52,6 +52,7 @@ export default async function page() {
   const datas = await getData();
   return (
   <main className={styles.main}>
+    <ul>
 
   {datas.map((post) => {
    return (
@@ -60,7 +61,7 @@ export default async function page() {
     </li>
    );
   })}
- 
+ </ul>
  </main>
  
  

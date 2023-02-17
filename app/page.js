@@ -36,21 +36,24 @@ const inter = Inter({ subsets: ['latin'] })
 async function getData(){
   const res = await 
   fetch(`https://blog-page.microcms.io/api/v1/blog`
-  , {     cache: "no-store" }
-  );
+  , {     cache: "no-store",  headers: 
+    {"X-MICROCMS-API-KEY": process.env.MICROCMS_API_KEY},
+});
   // if (!res.ok) {
   //   // This will activate the closest `error.js` Error Boundary
   //   throw new Error('Failed to fetch data');}
-  const {datas}  = await res.json();
-  console.log({datas});
+  const datas  = await res.json();
+  console.log(datas);
 
-  return {datas};
+  return datas;
 }
 
 export default async function page() { 
-  const contents = await getData();
+  const datas = await getData();
   return (
-  <ul>
+  <main className={styles.main}><ul>
+   <h1>{datas.title}</h1>
+   <h2>{datas.discription}</h2>
   {/* {contents.map((post) => {
    return (
     <li key={post.id}>
@@ -58,5 +61,10 @@ export default async function page() {
     </li>
    );
   })} */}
- </ul>)
+ </ul>
+ </main>
+ 
+ 
+ )
+ 
   }

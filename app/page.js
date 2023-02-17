@@ -52,16 +52,11 @@ export default async function page() {
   const datas = await getData();
   return (
   <main className={styles.main}>
+    <h1> {post.title}</h1>
     <ul>
-
-  {datas.map((post) => {
-   return (
-    <li key={post.title}>
-     <Link href={`/static/${post.title}`}>{post.title}</Link>
+      <li>  <Link href={`/static/${post.title}`}>{post.title}</Link>
     </li>
-   );
-  })}
- </ul>
+</ul>
  </main>
  
  

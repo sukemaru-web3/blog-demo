@@ -52,15 +52,14 @@ export default async function page() {
   const datas = await getData();
   return (
   <main className={styles.main}>
-   <h1>{datas.title}</h1>
-   <h2>{datas.discription}</h2>
-  {/* {contents.map((post) => {
+
+  {datas.map((post) => {
    return (
-    <li key={post.id}>
-     <Link href={`/static/${post.id}`}>{post.title}</Link>
+    <li key={post.title}>
+     <Link href={`/static/${post.title}`}>{post.title}</Link>
     </li>
    );
-  })} */}
+  })}
  
  </main>
  

@@ -54,10 +54,9 @@ export default async function page() {
   return (
   <main className={styles.main}>
     <h1> {datas.title}</h1>
-    <ul>
-      <li>  <Link href={`/static/${datas.title}`}>{datas.discription}</Link>
-    </li>
-</ul>
+    <h2>  <Link href={`/static/${datas.title}`}>{datas.discription}</Link> </h2>
+
+
  </main>
  
  

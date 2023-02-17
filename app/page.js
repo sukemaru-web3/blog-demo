@@ -53,9 +53,9 @@ export default async function page() {
   const datas = await getData();
   return (
   <main className={styles.main}>
-    <h1> {post.title}</h1>
+    <h1> {datas.title}</h1>
     <ul>
-      <li>  <Link href={`/static/${post.title}`}>{post.title}</Link>
+      <li>  <Link href={`/static/${datas.title}`}>{datas.discription}</Link>
     </li>
 </ul>
  </main>

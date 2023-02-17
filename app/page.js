@@ -51,7 +51,7 @@ async function getData(){
 export default async function page() { 
   const datas = await getData();
   return (
-  <main className={styles.main}><ul>
+  <main className={styles.main}>
    <h1>{datas.title}</h1>
    <h2>{datas.discription}</h2>
   {/* {contents.map((post) => {
@@ -61,7 +61,7 @@ export default async function page() {
     </li>
    );
   })} */}
- </ul>
+ 
  </main>
  
  

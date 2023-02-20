@@ -4,10 +4,14 @@ import Image from 'next/image';
 import Link from 'next/link'
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
+import './style.css'
+
 
 import './globals.css'
 import { useRouterUrl } from './hooks/useRouterUrl';
 import styles from "./page.module.css";
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 
 
@@ -101,6 +105,7 @@ export default function RootLayout({ children }) {
 
         </nav>
         {children}
+
         </body>
     </html>
   )

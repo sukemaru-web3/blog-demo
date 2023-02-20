@@ -7,22 +7,21 @@
   min-height: 100vh;
 }
 
+
 .logo{
   margin: auto 20px;
 }
 
 .nav {
+  z-index: 999;
   width: 100%;
   min-height: 8vh;
-
-  /* padding :12px 16px; */
   position: fixed;
   top: 0;
   left: 0;
-  /* background-color: aqua; */
   backdrop-filter: saturate(180%) blur(5px);
-  background: hsla(0,0%,100%,.8);
-  border-bottom: solid 1px;
+  background: hsla(0, 0%, 12%, 0.8);
+  /* border-bottom: solid 1px; */
   display: flex;
   justify-content: space-around;
   
@@ -31,7 +30,7 @@
 .ul {
   display: flex;
   justify-content: space-around;
-  width: 35%;
+  width: 50%;
   list-style: none;
   align-items: center;
   /* margin-block-start: 0; */
@@ -39,9 +38,9 @@
 
 
 .nav a {
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-decoration: none;
-  color: rgb(9, 9, 9);
+  color: rgb(253, 253, 253);
 
 
 }
@@ -49,11 +48,6 @@
   color: rgb(255, 144, 144);
   transition: 0.2s;
 
-}
-
-.red {
-  font-size: 2rem;
-  color: red;
 }
 
 .hambagar{
@@ -84,22 +78,21 @@
 
   .nav{
     justify-content: space-between;
-    display: none;
+    /* display: none; */
   }
   .ul{
     padding: 20px;
-    width: 50%;
+    width: 150px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     position: absolute;
     right: 0;
-    height: 92vh;
+    height: 50vh;
     top: 8vh;
-    background-color: aquamarine;
+    background: hsla(0, 0%, 12%, 0.8);
     opacity: 0.9;
-    /* transition-property:  0.2s; */
     transform: translateX(100%);
     z-index: 300;
   }
@@ -120,9 +113,9 @@
   .hambagar div{
     width: 40px;
     height: 3px;
-    background-color: rgb(18, 18, 18);
-    margin: 8px;
-    transition: 0.5s ease;
+    background-color: rgb(231, 231, 231);
+    margin: 7px;
+    transition: 0.3s ease;
   }
 
   /* .open{

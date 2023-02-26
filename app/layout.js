@@ -70,10 +70,10 @@ export default function RootLayout({ children }) {
         
           <Image
         className={styles.logo}
-          src="/next.svg"
+          src="/rogo.png"
           alt="Next.js Logo"
-          width={180}
-          height={37}
+          width={50}
+          height={50}
           priority
           />
       

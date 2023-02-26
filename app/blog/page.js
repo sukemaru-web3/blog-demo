@@ -36,7 +36,7 @@ const inter = Inter({ subsets: ['latin'] })
 //上記書き換え
 async function getData(){
   const res = await 
-  fetch(`https://blog-page.microcms.io/api/v1/blog`
+  fetch(`https://blog-page.microcms.io/api/v1/user`
   , {     cache: "no-store",  headers: 
     {"X-MICROCMS-API-KEY": process.env.MICROCMS_API_KEY},
 });
@@ -44,7 +44,7 @@ async function getData(){
   //   // This will activate the closest `error.js` Error Boundary
   //   throw new Error('Failed to fetch data');}
   const datas  = await res.json();
-  console.log(datas);
+  // console.log(datas);
 
   return datas;
 }
@@ -53,8 +53,8 @@ export default async function page() {
   const datas = await getData();
   return (
   <main className={styles.main}>
-    <h1> {datas.title}</h1>
-    <h2>  <Link href={`/static/${datas.title}`}>{datas.discription}</Link> </h2>
+    <h1> {datas.name}</h1>
+    <h2>  <Link href={`/static/${datas.name}`}>{datas.email}</Link> </h2>
 
 
  </main>

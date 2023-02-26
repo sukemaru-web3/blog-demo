@@ -18,7 +18,6 @@ section{
 /* hero section　*/
 
 .hero{
-    height: 100vh;
 
     color: white;
   
@@ -81,10 +80,10 @@ transition:transform 0.2s;
 @media (max-width: 780px) {
 
     .hero{
-        height: 80vh;
+        
         background-image:url("../image/boardgame.jpg") ;
         background-position: center;
-        /* background-size:cover ; */
+        background-size:cover ;
         background-attachment: fixed ;
     }
 

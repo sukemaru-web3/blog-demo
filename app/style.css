@@ -84,7 +84,7 @@ transition:transform 0.2s;
         height: 80vh;
         background-image:url("../image/boardgame.jpg") ;
         background-position: center;
-        background-size:cover ;
+        /* background-size:cover ; */
         background-attachment: fixed ;
     }
 

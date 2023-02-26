@@ -5,7 +5,7 @@ import { Service } from './compornets/service';
 export default  function page() {
   return (
   <>
-    <section className="hero vh-100 d-flex align-items-center">
+    <section className="hero  d-flex align-items-center">
       <div className="container">
           <div className="title col-md-8">
             <h1 >nook in</h1>

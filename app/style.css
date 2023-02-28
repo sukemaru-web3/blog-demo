@@ -83,7 +83,7 @@ section{
 .card-effect:hover{
     box-shadow:none;
 
-transform:scale(0.98);
+transform:scale(0.99);
 transition:transform 0.2s;
 }
 .service h5 {
@@ -182,6 +182,7 @@ transition:transform 0.2s;
     position: relative;
     background-image:url("/doriaSet.jpg");
     background-size:cover ;
+    background-position: center;
     border-radius: 3rem;
 }
 
@@ -196,7 +197,7 @@ transition:transform 0.2s;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(251, 219, 196, 0.153);
+    background-color: rgba(255, 255, 255,0.1);
     border-radius: 3rem;
 
 }
@@ -210,30 +211,16 @@ transition:transform 0.2s;
 
 .box img{
     opacity: 0.2;
-    width: 90%;
+    width: 80%;
     transform: translateX(1rem);
     /* height: 100%;  */
 }
 
 .box img:hover{
     transform: translateX(0);
-
-opacity: 1;
-transition: all 0.3s ease;
-}
-
-.box p{
-    text-shadow: rgb(0, 0, 0) 1px 2px 3px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(255, 171, 92);
-    margin-top: 1rem;
-}
-
-
-
-
-
+    opacity: 1;
+    transition: all 0.3s ease;
+    }
 
 @media (max-width: 780px) {
 
@@ -294,6 +281,23 @@ transition: all 0.3s ease;
 }
 
 
+.box{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.box img{
+    opacity: 1;
+    width: 90%;
+    transform: translateX(0);
+    /* height: 100%;  */
+}
+
+.box img:hover{
+    opacity: 1;
+    }
 
 }
 

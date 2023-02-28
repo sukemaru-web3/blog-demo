@@ -16,7 +16,6 @@ export default function blog() {
         hello my {router.slice(1)} page
       </h1>
       {/* <button onClick={console.log(style)}>test</button> */}
-
     </main>
   )
 }

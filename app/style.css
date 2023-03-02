@@ -238,28 +238,50 @@ section{
     background-color: rgba(0, 0, 0, 0.2)
 }
 
+.game_content{
+    position:relative;
+    z-index: 1;
+}
+
 .game_card{
-    color: black;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(27, 39, 77, 0.842);
+    color: rgb(255, 255, 255);
     position: absolute;
-    top: 20%;
+    top: 17%;
     right: 7%;
 
 
 }
 
 .game_text {
-    border: black solid 1px;
-    padding: 2rem;
+    border: solid 1px;
+    padding: 1rem;
 }
 
 .game_text h2{
     font-size: 2rem;
+    margin-top:1rem;
+    text-align: center;
+    border-bottom: solid 2px;
 }
 
+.game_intro{
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top:1rem;
+}
+.game_intro h3,p{
+color: rgb(0, 0, 0);
+}
 
-.game_text img{
+.game_intro h3::before{
+    content: "▼";
+}
+
+.game_intro img{
     width: 100%;
+    margin-top:1rem;
+
 }
 
 
@@ -340,11 +362,18 @@ section{
 .box img:hover{
     opacity: 1;
     }
-.game_card{
-    transform: scale(0.7);
-    position: static
-    ;
-}
+
+    
+
+    .game_card{
+        background-color: rgba(27, 39, 77, 0.842);
+        color: rgb(255, 255, 255);
+        position:static;
+    
+    
+    }
+
+
 
 }
 

@@ -78,6 +78,10 @@ section{
 .card-effect{
     box-shadow: rgb(117, 117, 117) 1px 3px 4px;
 }
+.card-effect:hover{
+    box-shadow: none;
+
+}
 
 
 .service h5 {
@@ -144,8 +148,15 @@ section{
     width: 10rem;
     height:  10rem;
     border-radius: 50%;
-    background-color: rgba(51, 120, 106,0.7);
+    background-color: rgba(51, 120, 106, 0.577);
+    box-shadow: rgb(0, 0, 0) 1px 1px 3px;
 }
+/* 
+.circle_btn:hover{
+    background-color: rgb(51, 120, 106);
+    box-shadow: none;
+
+} */
 
 
 .detail{
@@ -159,7 +170,6 @@ section{
 }
 
 .detail p{
-    line-height: normal;
     display: none;
 }
 
@@ -248,12 +258,11 @@ section{
    
 }
 .game_card{
-    transition: all 0.2s;
-    transform: translateY(100px);
+    transition: all 0.5s;
+    transform: translateY(40px);
     opacity:0;
     background-color: rgba(27, 39, 77, 0.842);
     color: rgb(255, 255, 255);
-  
 
 }
 .game_content:hover  .game_card{
@@ -266,6 +275,7 @@ section{
 .game_text {
     border: solid 1px;
     padding: 1rem;
+
 }
 
 .game_text h2{
@@ -295,7 +305,12 @@ color: rgb(0, 0, 0);
 }
 
 
-@media (max-width: 780px) {
+
+
+
+
+
+@media (max-width: 768px) {
 
     .hero{
         
@@ -336,17 +351,19 @@ color: rgb(0, 0, 0);
 }
 
 
-
+.info{
+    top: 60%;
+}
 
 .circle_btn{
-    width: 7rem;
-    height:  7rem;
+    width: 8rem;
+    height:  8rem;
 }
 
 
 .detail{
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .detail p{
@@ -379,11 +396,44 @@ color: rgb(0, 0, 0);
         background-color: rgba(27, 39, 77, 0.842);
         color: rgb(255, 255, 255);
         position:static;
-    
+        transform: translateY(0);
+        opacity: 1;
     
     }
+.game_content{
+    width: 100%;
+}
+
+.game_card{
+    flex-direction: column;
+}
 
 
+
+.game_intro img{
+    width: 40%;
+}
+
+.mobile_box{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 50%;
+    position: absolute;
+    right: 5px;
+}
+
+
+/* .game_text h2{
+    font-size: 2rem;
+    margin-top:1rem;
+    text-align: center;
+    border-bottom: solid 2px;
+}
+
+.game_intro{
+
+    width: 100%;
+} */
 
 }
 

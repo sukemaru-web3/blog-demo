@@ -239,19 +239,29 @@ section{
 }
 
 .game_content{
+    width: 60%;
     position:relative;
     z-index: 1;
+    border: 2px dashed white;
+    background-color: rgba(0, 0, 0, 0.21);
+    border-radius: 15px;
+   
 }
-
 .game_card{
+    transition: all 0.2s;
+    transform: translateY(100px);
+    opacity:0;
     background-color: rgba(27, 39, 77, 0.842);
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 17%;
-    right: 7%;
-
+  
 
 }
+.game_content:hover  .game_card{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 
 .game_text {
     border: solid 1px;
@@ -270,7 +280,7 @@ section{
     font-size: 1.5rem;
     margin-top:1rem;
 }
-.game_intro h3,p{
+.game_intro h3,.game_intro p{
 color: rgb(0, 0, 0);
 }
 

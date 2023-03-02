@@ -28,7 +28,7 @@ export const Service = () => {
                 <img src="/frenchToast.jpg" className="card-img-top" />
                 <div className='my-4 px-3'>
                   <h5>Eat&Drink</h5>
-                  <p>手作りのカフェメニューはいかが？</p>
+                  <p>お腹へった</p>
                    <a href="#menu" className='btn btn-primary fs-4 '>詳しく</a>
                 </div>
               </div>
@@ -38,7 +38,7 @@ export const Service = () => {
                 <img src="/boardgame.jpg" className="card-img-top" />
                 <div className='my-4 px-3'>
                   <h5>Have a break</h5>
-                  <p>アナログゲームや書籍で息抜き</p>
+                  <p>遊びてー</p>
                    <a href="#game" className='btn btn-primary fs-4 '>詳しく</a>
                 </div>
               </div>

@@ -23,7 +23,6 @@ export const Work = () => {
           <div className="info_text d-flex align-items-center">
           <div onClick={handleClick} className='d-flex  circle_btn align-items-center justify-content-center'>
           <a className='fs-3 text-decoration-none text-white text-center '>Info</a>
-            {/* <i  className="bi bi-arrow-down-square" ></i> */}
           </div>
             <div className={ "detail" + " " + (toggleCheck)}>
               <p className={toggleCheck}>【サービス一覧】<br/>高速Wi-Fi/フリードリンク/各種コンセント/モニター/リングライト/ウェブカメラ/その他</p>

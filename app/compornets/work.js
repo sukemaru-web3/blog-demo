@@ -19,12 +19,17 @@ export const Work = () => {
           </div>
         </div>
         <div className="info d-flex justify-content-start ">
-          {/* <div className="info_text"> */}
-          <div
-            onClick={handleClick}
-            className="d-flex  circle_btn align-items-center justify-content-center"
-          >
-            <a className="fs-3 text-decoration-none text-white">Infomation</a>
+          <div>
+            <div className="click">
+              <p>Click!</p>
+              <i className="bi bi-arrow-down-square fs-2"></i>
+            </div>
+            <div
+              onClick={handleClick}
+              className="d-flex  circle_btn align-items-center justify-content-center"
+            >
+              <a className="fs-3 text-decoration-none text-white">Info</a>
+            </div>
           </div>
           <div className={"detail" + " " + toggleCheck}>
             <p className={toggleCheck}>

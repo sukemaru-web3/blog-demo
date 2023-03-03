@@ -132,6 +132,18 @@ section {
   margin: 2rem;
 }
 
+.click {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.click p {
+  margin-bottom: 0;
+}
+/* .click i {
+  margin-left: 1rem;
+} */
 .circle_btn {
   cursor: pointer;
   width: 10rem;
@@ -281,6 +293,75 @@ section {
   margin-top: 1rem;
 }
 
+/* price section　*/
+
+.price {
+  background: linear-gradient(#f5d2d2, #e5de91);
+}
+
+.price_title h1 {
+  font-size: 4rem;
+}
+
+.price_list {
+}
+
+.price_list h2::before {
+  content: "▼";
+}
+
+.price_list h2 {
+  font-size: 2rem;
+  border-bottom: 2px dashed black;
+}
+
+.price_list p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.price_card {
+  text-align: center;
+}
+
+/* footer section　*/
+
+.contact .title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contact a {
+  margin: 0.5rem;
+}
+.contact p {
+  font-size: 2rem;
+  margin: auto 0;
+}
+.contact i {
+  font-size: 3rem;
+}
+
+.footer .title h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.line {
+  box-shadow: black 1px 2px 3px;
+  border-radius: 10px;
+  padding: 3rem;
+  background-color: rgba(164, 164, 164, 0.096);
+  position: absolute;
+  left: 10%;
+  text-align: center;
+}
+.line h4 {
+  font-size: 3rem;
+}
+
 @media (max-width: 768px) {
   .hero {
     background-image: url("/boardgame.jpg");
@@ -380,15 +461,29 @@ section {
     right: 5px;
   }
 
-  /* .game_text h2{
-    font-size: 2rem;
-    margin-top:1rem;
-    text-align: center;
-    border-bottom: solid 2px;
-}
+  .price_list h2 {
+    font-size: 1.5rem;
+  }
 
-.game_intro{
+  .price_list p {
+    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
 
+  .line {
+    position: static;
+    left: 0;
     width: 100%;
-} */
+  }
+  .line h4 {
+    font-size: 3rem;
+  }
+  .contact .line img {
+    width: 80%;
+  }
+
+  .contact {
+    text-align: center;
+  }
 }

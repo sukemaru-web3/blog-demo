@@ -33,9 +33,11 @@ export const Work = () => {
           </div>
           <div className={"detail" + " " + toggleCheck}>
             <p className={toggleCheck}>
-              【料金に含まれているサービス】
+              高速Wi-Fi/フリードリンク/各種コンセント/モニター/ウェブカメラ/その他
               <br />
-              高速Wi-Fi/フリードリンク/各種コンセント/モニター/リングライト/ウェブカメラ/その他
+              などの利用は
+              <a href="#price">《料金》</a>
+              に含まれます
             </p>
           </div>
         </div>

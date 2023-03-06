@@ -11,13 +11,13 @@ export const Price = () => {
             </div>
           </div>
           <div className="price_list d-flex justify-content-around ">
-            <div className="price_card card  p-4  col-md-4  ">
+            <div className="price_card bg-light  p-4  col-md-4  ">
               <h2>時間料金(11-18)</h2>
               <p>1F:250円/30分</p>
               <p>2F:270円/30分</p>
               <p>土日:300円/30分</p>
             </div>
-            <div className="price_card card  p-4 col-md-4 ">
+            <div className="price_card bg-light  p-4 col-md-4 ">
               <h2>1日料金(11-18)</h2>
               <p>1F:1800円</p>
               <p>2F:2000円</p>
@@ -31,7 +31,7 @@ export const Price = () => {
                 <p>
                   18時で一旦時間利用はリセットされ、カフェレストランへと営業形態が変わります。
                   <br />
-                  以降は1000円/90分か、ディナーメニューをご注文下さい
+                  詳しくはLINEにて
                 </p>
               </div>
             </div>

@@ -3,7 +3,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <>
-      <div className="footer  p-2" id="footer">
+      <div className="footer bg-light p-2" id="footer">
         <div className="container ">
           <div className="row  d-flex justify-content-between">
             <div className="line col-md-5 m-3">
@@ -16,7 +16,7 @@ export const Footer = () => {
                 />
               </a>
             </div>
-            <div className="shop_info col-md-6  text-white text-end p-3 ">
+            <div className="shop_info col-md-6  text-end p-3 ">
               <div className="title ">
                 <h2 className="m-3">contact</h2>
               </div>

@@ -7,19 +7,18 @@ html {
 h1,
 h2,
 h3 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
 }
 
 a,
 p {
-  font-size: 1.5rem;
   position: relative;
   z-index: 1;
 }
 
 section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   /* width: 100%; */
 }
 
@@ -63,7 +62,7 @@ section {
 /* service section　*/
 
 .service h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .service img {
@@ -83,7 +82,7 @@ section {
 }
 
 .service p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* work section　*/
@@ -107,7 +106,7 @@ section {
 }
 
 .work .title {
-  color: rgb(250, 255, 200);
+  color: rgb(249, 255, 229);
   transform: translateY(100px);
 
   position: relative;
@@ -117,6 +116,7 @@ section {
 .work h2 {
   text-shadow: black 1px 3px 6px;
   font-size: 5rem;
+  font-weight: 600;
 }
 .work p {
   font-size: 2rem;
@@ -185,6 +185,11 @@ section {
 }
 
 /* menu section　*/
+
+.menu {
+  background: linear-gradient(-90deg, #fff 50%, transparent 50%);
+  background-size: 14px 14px;
+}
 .menu_box {
   position: relative;
   background-image: url("/doriaSet.jpg");
@@ -216,16 +221,18 @@ section {
 }
 
 .box img {
+  border-radius: 15px;
   opacity: 0.2;
   width: 100%;
   transform: translateX(1rem);
+  transition: all 0.3s ease;
+
   /* height: 100%;  */
 }
 
 .box img:hover {
   transform: translateX(0);
   opacity: 1;
-  transition: all 0.3s ease;
 }
 
 /* game section　*/
@@ -244,26 +251,37 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.168);
 }
 
 .game_content {
-  width: 60%;
+  padding: 2rem;
   position: relative;
   z-index: 1;
   border: 2px dashed white;
   background-color: rgba(0, 0, 0, 0.21);
   border-radius: 15px;
 }
-.game_card {
+
+.game_content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.game_box {
+  display: flex;
+  justify-content: space-around;
+}
+.game_text {
   transition: all 0.5s;
-  transform: translateY(40px);
-  opacity: 0;
+  /* transform: translateY(40px); */
+  /* opacity: 0;? */
   background-color: rgba(27, 39, 77, 0.842);
   color: rgb(255, 255, 255);
 }
-.game_content:hover .game_card {
+.game_content:hover .game_text {
   transform: translateY(0);
+  transition-delay: 0.3s ease;
   opacity: 1;
 }
 
@@ -283,14 +301,18 @@ section {
   padding: 1rem;
   font-size: 1.5rem;
   margin-top: 1rem;
+  color: black;
 }
-.game_intro h3,
+
 .game_intro p {
-  color: rgb(0, 0, 0);
+  line-height: 1.8rem;
 }
 
 .game_intro h3::before {
   content: "▼";
+}
+.game_intro h3 {
+  margin: 1rem;
 }
 
 .game_intro img {
@@ -301,14 +323,31 @@ section {
 /* price section　*/
 
 .price {
-  background: linear-gradient(#f5d2d2, #e5de91);
+  background: linear-gradient(rgb(164, 207, 255) 70%, #f8f8fa);
+  /* background-image: radial-gradient(circle, #bbdefb6e 0.5em, transparent 0.5em),
+    radial-gradient(circle, #90c9f863 0.3em, transparent 0.3em);
+  background-position: 0 0, 3em 3em;
+
+  background-repeat: repeat;
+  background-size: 6em 6em; */
 }
 
 .price_title h1 {
   font-size: 4rem;
+  text-shadow: black 1px 2px 3px;
+}
+.price_title h2 {
+  font-size: 2.5rem;
+  text-shadow: black 1px 1px 3px;
+}
+
+.price_title p {
+  font-size: 1.5rem;
+  text-shadow: black 1px 1px 3px;
 }
 
 .price_list {
+  font-size: 2rem;
 }
 
 .price_list h2::before {
@@ -316,7 +355,6 @@ section {
 }
 
 .price_list h2 {
-  font-size: 2rem;
   border-bottom: 2px dashed black;
 }
 
@@ -324,18 +362,15 @@ section {
   margin-top: 1rem;
   margin-bottom: 0;
   font-weight: 600;
-  font-size: 2rem;
 }
 
 .price_card {
+  box-shadow: black 1px 1px 3px;
+
   text-align: center;
 }
 
 /* footer section　*/
-
-.footer {
-  background: linear-gradient(rgb(255, 157, 157), rgb(75, 210, 133));
-}
 
 .shop_info .title h2 {
   font-size: 3rem;
@@ -354,7 +389,7 @@ section {
   margin: auto 0;
 }
 .shop_info i {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 3rem;
 }
 
@@ -372,7 +407,7 @@ section {
   text-align: center;
 }
 .line h4 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 3rem;
 }
 
@@ -448,35 +483,50 @@ section {
     opacity: 1;
   }
 
-  .game_card {
-    background-color: rgba(27, 39, 77, 0.842);
+  .game_box {
+    display: block;
+  }
+
+  .game_content {
+    margin: 0 auto;
+    width: 90%;
+
+    /* background-color: rgba(27, 39, 77, 0.842);
     color: rgb(255, 255, 255);
     position: static;
     transform: translateY(0);
-    opacity: 1;
-  }
-  .game_content {
-    width: 100%;
+    opacity: 1; */
   }
 
-  .game_card {
-    flex-direction: column;
+  .game_text + .book {
+    display: none;
+  }
+  .game_text {
+    width: 85%;
+    margin: 0 auto;
   }
 
   .game_intro img {
-    width: 40%;
+    width: 80%;
+  }
+
+  .game_box::after {
+    content: "書籍もあるよ";
   }
 
   .mobile_box {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    width: 50%;
-    position: absolute;
+    /* font-size: 1.5rem;
+    line-height: 1.5rem; */
+    /* position: absolute;
     right: 5px;
+   */
   }
 
+  .price_list {
+    flex-direction: column;
+  }
   .price_list h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .price_list p {
@@ -495,7 +545,7 @@ section {
 
   .shop_info .title h2 {
     text-align: center;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(0, 0, 0);
   }
 
   .shop_info .link {
@@ -504,7 +554,7 @@ section {
   }
 
   .shop_info .link i {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .shop_info .link p {
     display: none;

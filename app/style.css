@@ -160,7 +160,7 @@ section {
 } */
 
 .detail {
-  width: 60%;
+  width: 70%;
   margin: auto 5%;
   border-radius: 10px;
   padding: 1rem;
@@ -413,12 +413,8 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url("/boardgame.jpg");
-    background-position: center;
-    background-size: none;
-    background-attachment: fixed;
+    background-image: url("/dise.png");
   }
-
   .hero .title {
     transform: translateY(0);
   }

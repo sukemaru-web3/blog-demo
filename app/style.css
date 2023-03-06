@@ -413,7 +413,6 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    height: 50vh !important;
     background-size: auto;
   }
   .hero .title {

@@ -27,11 +27,11 @@ section {
 .hero {
   position: relative;
   color: white;
-  background-image: url("/boardgame.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
+
 .hero::after {
   content: "";
   position: absolute;
@@ -40,6 +40,8 @@ section {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  /* background-size: cover; */
 }
 
 .hero .title {
@@ -413,7 +415,7 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    background-size: auto;
+    /* background-size: auto; */
   }
   .hero .title {
     transform: translateY(0);
@@ -430,12 +432,12 @@ section {
     font-size: 2rem;
     text-shadow: black 1px 3px 6px;
   }
-  .work {
+  /* .work {
     background-image: url("/boardgame.jpg");
     background-position: center;
     background-size: none;
     background-attachment: fixed;
-  }
+  } */
 
   .work h2 {
     text-shadow: black 1px 3px 6px;
@@ -484,13 +486,13 @@ section {
   .box img:hover {
     opacity: 1;
   }
-
+  /* 
   .game {
     background-image: url("/boardgame.jpg");
     background-position: center;
     background-size: none;
     background-attachment: fixed;
-  }
+  } */
   .game_box {
     display: block;
   }

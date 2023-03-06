@@ -415,7 +415,7 @@ section {
   .hero {
     background-image: url("/boardgame.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: none;
     background-attachment: fixed;
   }
 
@@ -433,6 +433,12 @@ section {
 
     font-size: 2rem;
     text-shadow: black 1px 3px 6px;
+  }
+  .work {
+    background-image: url("/boardgame.jpg");
+    background-position: center;
+    background-size: none;
+    background-attachment: fixed;
   }
 
   .work h2 {
@@ -483,6 +489,12 @@ section {
     opacity: 1;
   }
 
+  .game {
+    background-image: url("/boardgame.jpg");
+    background-position: center;
+    background-size: none;
+    background-attachment: fixed;
+  }
   .game_box {
     display: block;
   }

@@ -413,7 +413,8 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    background-image: url("/dise.png");
+    height: 50vh !important;
+    background-size: auto;
   }
   .hero .title {
     transform: translateY(0);

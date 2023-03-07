@@ -9,7 +9,7 @@ import { Work } from "./compornets/work";
 export default function page() {
   return (
     <>
-      <section className="hero vh-100  d-flex align-items-center" id="hero">
+      <section className="hero vh-100 d-flex align-items-center" id="hero">
         <div className="container">
           <div className="title col-md-8 ">
             <h1 className="m-2">お仕事＋カフェ</h1>

@@ -508,10 +508,6 @@ section {
   .game_text + .book {
     display: none;
   }
-  .game_text {
-    width: 95%;
-    margin: 0 auto;
-  }
 
   .game_intro {
     display: flex;
@@ -524,9 +520,11 @@ section {
     height: 100%;
   }
 
-  .mobile_box {
+  .mobile_box h3 {
+    font-size: 2rem;
+  }
+  .mobile_box p {
     font-size: 1.5rem;
-    line-height: 1.5rem;
   }
 
   .price_list {

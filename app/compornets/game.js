@@ -38,7 +38,7 @@ export const Game = async () => {
   return (
     <>
       <section
-        className="game vh-100 bg-black  d-flex align-items-center justify-content-end"
+        className="game  bg-black  d-flex align-items-center justify-content-end"
         id="game"
       >
         <div className=" col-md-7  m-3">

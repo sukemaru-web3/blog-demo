@@ -521,6 +521,7 @@ section {
   .game_intro img {
     width: 50%;
     max-width: 180px;
+    height: 100%;
   }
 
   .mobile_box {

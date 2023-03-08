@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
 html {
   font-size: 62.5%;
@@ -6,8 +7,12 @@ html {
 
 h1,
 h2,
-h3 {
-  /* font-size: 2.5rem; */
+h3,
+h4,
+h5,
+a,
+p {
+  font-family: "Yusei Magic", sans-serif;
 }
 
 a,
@@ -17,7 +22,7 @@ p {
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 3rem;
   /* width: 100%; */
 }
@@ -27,7 +32,7 @@ section {
 .hero {
   width: 100vw;
   color: white;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-image: url("/boardgame.jpg");
@@ -94,7 +99,7 @@ section {
   background-image: url("/table.jpg");
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 .work::after {
   content: "";
@@ -243,7 +248,7 @@ section {
   background-image: url("/bg.jpg");
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 }
 .game::after {
   content: "";
@@ -299,6 +304,8 @@ section {
 }
 
 .game_intro {
+  background-color: rgb(220, 230, 238);
+
   padding: 1rem;
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -375,7 +382,6 @@ section {
 
 .shop_info .title h2 {
   font-size: 3rem;
-  font-weight: bold;
 }
 
 .shop_info .link {
@@ -396,7 +402,6 @@ section {
 
 .footer .title h2 {
   font-size: 3rem;
-  font-weight: bold;
 }
 
 .line {
@@ -414,7 +419,7 @@ section {
 
 @media (max-width: 768px) {
   .hero {
-    /* background-size: auto; */
+    background-attachment: scroll;
   }
   .hero .title {
     transform: translateY(0);
@@ -431,12 +436,9 @@ section {
     font-size: 2rem;
     text-shadow: black 1px 3px 6px;
   }
-  /* .work {
-    background-image: url("/boardgame.jpg");
-    background-position: center;
-    background-size: none;
-    background-attachment: fixed;
-  } */
+  .work {
+    background-attachment: scroll;
+  }
 
   .work h2 {
     text-shadow: black 1px 3px 6px;
@@ -452,7 +454,7 @@ section {
   }
 
   .info {
-    top: 60%;
+    top: 70%;
   }
 
   .circle_btn {
@@ -485,20 +487,16 @@ section {
   .box img:hover {
     opacity: 1;
   }
-  /* 
   .game {
-    background-image: url("/boardgame.jpg");
-    background-position: center;
-    background-size: none;
-    background-attachment: fixed;
-  } */
+    background-attachment: scroll;
+  }
   .game_box {
     display: block;
   }
 
   .game_content {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 
     /* background-color: rgba(27, 39, 77, 0.842);
     color: rgb(255, 255, 255);
@@ -511,24 +509,23 @@ section {
     display: none;
   }
   .game_text {
-    width: 85%;
+    width: 95%;
     margin: 0 auto;
   }
 
-  .game_intro img {
-    width: 80%;
+  .game_intro {
+    display: flex;
+    flex-direction: row;
   }
 
-  .game_box::after {
-    content: "書籍もあるよ";
+  .game_intro img {
+    width: 50%;
+    max-width: 180px;
   }
 
   .mobile_box {
-    /* font-size: 1.5rem;
-    line-height: 1.5rem; */
-    /* position: absolute;
-    right: 5px;
-   */
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
   .price_list {

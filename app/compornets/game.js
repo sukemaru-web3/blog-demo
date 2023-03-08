@@ -1,6 +1,40 @@
 import React from "react";
+import getData from "../hooks/getData";
 
-export const Game = () => {
+export const Game = async () => {
+  //   const [toggle, setToggle] = useState(false);
+  // const handleClick = () => {
+  //   setToggle(toggle === !true);
+  // };
+  // console.log(toggle);
+  // const toggleCheck = toggle ? "d_none" : "";
+
+  // const [list, setList] = useState([]);
+  // useEffect(() => {
+  //   const fetch = async () => {
+  //     const lists = await getData();
+  //       setList(lists);
+  //   };
+  //   fetch();
+  // }, []);
+
+  const lists = await getData();
+  const prop = [...lists.contents];
+  const imgList = prop.map((img) => img.image);
+  const ramdom = Math.floor(Math.random() * prop.length);
+
+  // const prop = [...lists.contents];
+  // const imgList = prop.map((img) => img.image);
+  // const ramdom = Math.floor(Math.random() * prop.length);
+  // const lists = await getData();
+  // const prop = [...lists.contents];
+  // const imgList = prop.map((img) => img.image);
+  // console.log(imgList);
+  // const idList = prop.map((obj) => obj.title);
+  // console.log(idList[0]);
+
+  // ランダムな記事番号生成
+
   return (
     <>
       <section
@@ -14,24 +48,23 @@ export const Game = () => {
               <i className="bi bi-arrow-down-square fs-1"></i>
 
               <div className="game_box">
-                <div className=" game_text  col-md-5 ">
+                <div className=" game_text col-md-5">
                   <h2>ボードゲーム</h2>
-                  <div className="game_intro board card card-effect  ">
-                    <img className="card-img-top" src="/karou.png" alt="" />
-                    <div className="mobile_box">
-                      <h3>ドミニオン</h3>
-                      <p>
-                        カードのみで行うシンプルかつ奥深いゲーム。カードの効果を組み合わせ属州を集めよ
-                      </p>
+
+                  <div className="game_intro ">
+                    <img className="" src={imgList[ramdom].url} alt="" />
+                    <div className="mobile_box ">
+                      <h3>{prop[ramdom].title}</h3>
+                      <p>{prop[ramdom].discription}</p>
                     </div>
                   </div>
                 </div>
-                <div className=" game_text book col-md-5 ">
+                <div className=" game_text  col-md-5 ">
                   <h2>書籍</h2>
-                  <div className="game_intro card card-effect  ">
-                    <img className="card-img-top" src="/karou.png" alt="" />
+                  <div className="game_intro  ">
+                    <img className="card-img-top " src="/book.jpg" alt="" />
 
-                    <div className="mobile_box">
+                    <div className="mobile_box ">
                       <h3>伝え方が9割</h3>
                       <p>
                         上司への報告も、頼み事をする時も、物を売る時もぜんぶ言い方一つですって

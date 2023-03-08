@@ -1,3 +1,4 @@
+import Link from "next/navigation";
 import React from "react";
 import { Footer } from "./compornets/footer";
 import { Game } from "./compornets/game";
@@ -5,6 +6,7 @@ import { Menu } from "./compornets/menu";
 import { Price } from "./compornets/price";
 import { Service } from "./compornets/service";
 import { Work } from "./compornets/work";
+import getData from "./hooks/getData";
 
 export default function page() {
   return (

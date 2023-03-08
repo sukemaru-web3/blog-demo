@@ -13,15 +13,15 @@ export const Price = () => {
           <div className="price_list d-flex justify-content-around ">
             <div className="price_card bg-light  p-4  col-md-4  ">
               <h2>時間料金(11-18)</h2>
-              <p>1F:250円/30分</p>
-              <p>2F:270円/30分</p>
-              <p>土日:300円/30分</p>
+              <p>1F 250円/30分</p>
+              <p>2F 270円/30分</p>
+              <p>土日 300円/30分</p>
             </div>
             <div className="price_card bg-light  p-4 col-md-4 ">
               <h2>1日料金(11-18)</h2>
-              <p>1F:1800円</p>
-              <p>2F:2000円</p>
-              <p>土日:2400円</p>
+              <p>1F 1800円</p>
+              <p>2F 2000円</p>
+              <p>土日 2400円</p>
             </div>
           </div>
           <div className="price_title  d-flex justify-content-center">

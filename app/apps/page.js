@@ -1,10 +1,7 @@
 "use client";
 
-import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
 import { usePathname, useSearchParams } from "next/navigation";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function blog() {
   const router = usePathname();
